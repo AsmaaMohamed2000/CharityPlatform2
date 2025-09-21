@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/helps.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand ms-3 mb-3 mb-lg-0 d-flex pe-2 align-items-center align-items-lg-start border-end border-left-light"
+          href="#"
+        >
+          <img
+            src="images/logo.png"
+            style="
+              background: linear-gradient(to bottom right, #93dad2, #e6c589);
+            "
+            class="me-2 rounded-pill"
+            alt=""
+            width="55"
+            height="50"
+          />GIVEHOPE</a
+        >
+        <button
+          class="navbar-toggler mb-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 py-0 d-flex align-items-lg-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link text-light focus-ring ps-2 py-1 mb-1 mb-lg-0 px-lg-2 me-lg-1"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light focus-ring ps-2 py-1 mb-1 mb-lg-0 px-lg-2 me-lg-1"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link focus-ring ps-2 py-1 mb-1 mb-lg-0 px-lg-2 me-lg-1 text-light dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul
+                class="dropdown-menu shadow mt-2"
+                aria-labelledby="navbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Orphans</a></li>
+                <li><a class="dropdown-item" href="#">Education</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Health</a></li>
+                <li><a class="dropdown-item" href="#">Food</a></li>
+                <li><a class="dropdown-item" href="#">Environment</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light focus-ring mb-1 mb-lg-0 ps-2 py-1 px-lg-2 me-lg-1"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Get Involved</a
+              >
+            </li>
+          </ul>
+          <!-- d-md-flex -->
+          <form class="d-md-flex align-items-center text-center">
+            <input
+              class="form-control me-2 h-75 mb-3 mb-md-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn px-3 px-md-2 py-md-1 frst-btn me-2"
+              type="submit"
+            >
+              Search
+            </button>
+            <button
+              class="btn px-3 px-md-2 py-md-1 lst-btn me-lg-3"
+              data-bs-toggle="modal"
+              data-bs-target="#modal1"
+              type="button"
+            >
+              Donate
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--/////////////////////////////////////////////////////////////// -->
+
+    <div
+      class="modal fade"
+      id="modal1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog"
+        style="
+          background: linear-gradient(to bottom, #f3f6f5, #c7edea);
+          color: #1e3a36;
+        "
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              style="color: #146e65; font-weight: bolder"
+              id="staticBackdropLabel"
+            >
+              Your Donation
+            </h5>
+            <button
+              type="button"
+              style="color: #146e65"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-2">
+              <label
+                for="exampleFormControlInput1"
+                style="color: #146e65; font-weight: 600"
+                class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control mb-2"
+                id="exampleFormControlInput1"
+                placeholder="Enter your email"
+              />
+              <label
+                for="exampleFormControlInput1"
+                style="color: #146e65; font-weight: 600"
+                class="form-label"
+              >
+                Donation Amount</label
+              >
+              <input
+                type="number"
+                class="form-control mb-2"
+                id="exampleFormControlInput1"
+                placeholder="Enter your Donation"
+              />
+
+              <div class="form-chec mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  style="color: #146e65; font-weight: 600"
+                  for="flexCheckDefault"
+                >
+                  Subscribe for ubdates
+                </label>
+              </div>
+              <button
+                type="button"
+                class="btn modal-btn w-100"
+                data-bs-dismiss="modal"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators my-4">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/img1.jpeg"
+            class="d-block w-100 object-fit-cover"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-block border border-1"
+            style="--bs-border-color: rgb(255, 255, 255, 0.4)"
+          >
+            <h4 class="h4">Health Category</h4>
+            <p class="p mt-4 mb-4">
+              "With your support, we provide treatment and medical care that
+              preserves the dignity of those in need.
+            </p>
+            <button class="btn btn-outline-dark carousal-btn px-3 py-2">
+              Donate Now
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/img2.jpeg"
+            class="d-block w-100 object-fit-cover"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-blockk border border-1"
+            style="--bs-border-color: rgb(255, 255, 255, 0.4)"
+          >
+            <h4 class="h4">Education Category</h4>
+            <p class="p mt-4 mb-4">
+              With your support, we give a child the chance to learn and build a
+              future.
+            </p>
+            <button class="btn btn-outline-dark carousal-btn px-3 py-2">
+              Donate Now
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/img3.jpeg"
+            class="d-block w-100 object-fit-cover"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-block border border-1"
+            style="--bs-border-color: rgb(255, 255, 255, 0.4)"
+          >
+            <h4 class="h4">Orphan Care Category</h4>
+            <p class="p mt-4 mb-4">
+              "With your support, we give orphans the warmth of a family and
+              hope for a bright future.
+            </p>
+            <button class="btn btn-outline-dark carousal-btn px-3 py-2">
+              Donate Now
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/img4.jpeg"
+            class="d-block w-100 object-fit-cover"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-block border border-1"
+            style="--bs-border-color: rgb(255, 255, 255, 0.4)"
+          >
+            <h4 class="h4">Food Aid Category</h4>
+            <p class="p mt-4 mb-4">
+              "With your support, we place a bite of hope on the tables of those
+              in need.
+            </p>
+            <button class="btn btn-outline-dark carousal-btn px-3 py-2">
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <i class="fas fa-angle-left fs-1 d-none d-md-flex"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <i class="fas fa-angle-right fs-1 d-none d-md-flex"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main class="sec1 ps-4 pt-4">
+      <h2 class="h2 fw-bolder" style="color: #228b7c">Welcome</h2>
+      <p class="mt-3 p mt-md-2 pe-2" style="color: #344e4e">
+        Welcome to GiveHope, a non-profit charity dedicated to planting hope in
+        the hearts of those in need. Together, we support education, healthcare,
+        orphan care, food aid, and small projects to build a brighter future.
+        With your kindness, every act of giving becomes a seed of hope that
+        grows into lasting change.
+      </p>
+      <button class="btn main-btn mt-2 mb-3">Read more</button>
+    </main>
+    <div class="py-3" style="background-color: #e8f5f5">
+      <div
+        class="dropdown-divider opacity-50"
+        style="height: 0.6px; background-color: #58c5adff"
+      ></div>
+    </div>
+    <h1 class="py-5 fw-bolder h1 px-5 mb-0 accordion-title text-center">
+      Our Main Charity Programs
+    </h1>
+    <div class="py-3" style="background-color: #e6f4f1">
+      <div
+        class="dropdown-divider opacity-50"
+        style="height: 0.6px; background-color: #58c5adff"
+      ></div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed fw-bold"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Educatin and Orphans Care
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Providing learning opportunities, school supplies, and support for
+            orphans to build a brighter future .
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed fw-bold"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            healthcare support
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Offering medical treatment, care, and health awareness for those in
+            need
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed fw-bold"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Food Aid and Small Projects
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Delivering essential food supplies and supporting families with
+            small income-generating projects..
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3" style="background-color: #e6f4f1">
+      <div
+        class="dropdown-divider opacity-50"
+        style="height: 0.6px; background-color: #58c5adff"
+      ></div>
+    </div>
+    <h2 class="py-4 h2 px-4 mb-0 translate-header text-center">
+      Send Hope to Orphans and Families
+    </h2>
+
+    <div
+      class="sec-messages ps-3 ps-md-4 pe-1 pe-md-3 pe-md-4 pt-3 pb-3"
+      style="background: linear-gradient(to bottom, #f0fdfa, #baebe1)"
+    >
+      <h5 class="h5">
+        write your Support Message<span class="ms-2">press here</span>
+      </h5>
+      <button
+        class="btn d-block px-4 mt-3 cop"
+        data-bs-toggle="modal"
+        data-bs-target="#modal2"
+      >
+        Send
+      </button>
+      <span class="spn spn1 px-4 py-1 rounded-5">Sent!</span>
+      <textarea
+        class="d-block pt-2 pb-5 pb-xl-4 ps-4 w-100 mt-3"
+        id=""
+        rows="3"
+        placeholder="Write Here "
+      ></textarea>
+    </div>
+    <div
+      class="modal fade"
+      id="modal2"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Send Message</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span>your massage sent</span>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark ok" data-id="1" data-bs-dismiss="modal">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3" style="background-color: #e6f4f1">
+      <div
+        class="dropdown-divider opacity-50"
+        style="height: 0.6px; background-color: #58c5adff"
+      ></div>
+    </div>
+    <h2 class="py-4 h2 px-4 mb-0 text-center translate-header">
+      Send a Message Supporting Education
+    </h2>
+
+    <div
+      class="sec-messages ps-4 pe-3 pe-md-4 pt-3 pb-3"
+      style="background: linear-gradient(to bottom, #f0fdfa, #baebe1)"
+    >
+      <h5 class="h5">
+        write your Support Message <span class="ms-2">press here</span>
+      </h5>
+      <button
+        class="btn d-block px-4 mt-3 cop"
+        data-bs-toggle="modal"
+        data-bs-target="#modal3"
+      >
+        Send
+      </button>
+      <span class="spn spn2 px-4 py-1 rounded-5">Sent!</span>
+      <textarea
+        class="d-block pt-2 pb-5 pb-xl-4 ps-4 w-100 mt-3"
+        id=""
+        rows="3"
+        placeholder="Write Here"
+      ></textarea>
+    </div>
+    <div
+      class="modal fade"
+      id="modal3"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Send Message</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span>your massage sent</span>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark ok" data-id="2" data-bs-dismiss="modal">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3" style="background-color: #e6f4f1">
+      <div
+        class="dropdown-divider opacity-50"
+        style="height: 0.6px; background-color: #58c5adff"
+      ></div>
+    </div>
+    <h2 class="py-4 h2 px-4 text-center translate-header">
+      Support Treatment for Poor Patients
+    </h2>
+
+    <div
+      class="sec-messages ps-4 pe-3 pe-md-4 pt-3 pb-3"
+      style="background: linear-gradient(to bottom, #f0fdfa, #baebe1)"
+    >
+      <h5 class="h5">
+        write your Support Message <span class="ms-2">press here</span>
+      </h5>
+      <button
+        class="btn d-block px-4 mt-3 cop"
+        data-bs-toggle="modal"
+        data-bs-target="#modal4"
+      >
+        Send
+      </button>
+      <span class="spn spn3 px-4 py-1 rounded-5">Sent!</span>
+      <textarea
+        class="d-block pt-2 pb-5 pb-xl-4 ps-4 w-100 mt-3"
+        id=""
+        rows="3"
+        placeholder="Write Here"
+      ></textarea>
+    </div>
+    <div
+      class="modal fade"
+      id="modal4"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Send Message</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span>your massage sent</span>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-dark ok" data-id="3" data-bs-dismiss="modal">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3" style="background-color: #e6f4f1">
+      <div
+        class="dropdown-divider opacity-50"
+        style="height: 0.6px; background-color: #58c5adff"
+      ></div>
+    </div>
+
+    <div class="back"></div>
+    <!-- ///////////////////////////////////////////////////////////// -->
+    <div
+      class="pt-5 mb-0 pb-4"
+      style="background-color: rgb(230, 244, 241, 0.5)"
+    >
+      <h2 class="py-4 h2 fw-bolder px-4 mb-5 text-center cards-header">
+        Our Main Charity Projects
+      </h2>
+      <div class="container-fluid container-lg pt-4 pb-5">
+        <div class="row justify-content-center gx-3 card1">
+          <div class="px-2 pb-4 item rounded-3">
+            <img
+              src="images/img8.jpeg"
+              class="img-fluid rounded-top-3"
+              alt=""
+            />
+            <h5 class="mt-3 h5 mb-3">Education Support</h5>
+            <div class="d-flex pe-3 my-4">
+              <button class="btn btn-card ms-auto py-1 px-4">Details</button>
+            </div>
+            <span class="span"
+              >Support children’s learning for a brighter future
+            </span>
+          </div>
+          <div class="px-2 mt-3 mt-md-0 pb-4 item rounded-3">
+            <img
+              src="images/img10.jpeg"
+              class="img-fluid rounded-top-3"
+              alt=""
+            />
+            <h5 class="mt-3 h5 mb-3">Healthcare Aid</h5>
+            <div class="d-flex pe-3 my-4">
+              <button class="btn btn-card ms-auto py-1 px-4">Details</button>
+            </div>
+            <span class="span"
+              >Providing medical support to those in need
+            </span>
+          </div>
+          <div class="px-2 mt-3 mt-lg-0 pb-4 item rounded-3">
+            <img
+              src="images/img3.jpeg"
+              class="img-fluid rounded-top-3"
+              alt=""
+            />
+            <h5 class="mt-3 h5 mb-3">Orphan Care</h5>
+            <div class="d-flex pe-3 my-4">
+              <button class="btn btn-card ms-auto py-1 px-4">Details</button>
+            </div>
+            <span class="span"
+              >Offering love, shelter, and support for orphan
+            </span>
+          </div>
+          <div class="px-2 mt-3 pb-4 item rounded-3">
+            <img
+              src="images/img9.jpeg"
+              class="img-fluid rounded-top-3"
+              alt=""
+            />
+            <h5 class="mt-3 h5 mb-3">Food Assistance</h5>
+            <div class="d-flex pe-3 my-4">
+              <button class="btn btn-card ms-auto py-1 px-4">Details</button>
+            </div>
+            <span class="span"
+              >Delivering meals and nutrition to hungry families
+            </span>
+          </div>
+          <div class="px-2 mt-3 pb-4 item rounded-3">
+            <img
+              src="images/img5.jpeg"
+              class="img-fluid rounded-top-3"
+              alt=""
+            />
+            <h5 class="mt-3 h5 mb-3">Small Projects</h5>
+            <div class="d-flex pe-3 my-4">
+              <button class="btn btn-card ms-auto py-1 px-4">Details</button>
+            </div>
+            <span class="span"
+              >Helping families start small businesses for sustainable income
+            </span>
+          </div>
+          <div class="px-2 mt-3 pb-4 item rounded-3">
+            <img
+              src="images/img6.jpeg"
+              class="img-fluid rounded-top-3"
+              alt=""
+            />
+            <h5 class="mt-3 h5 mb-3">Environmental Development</h5>
+            <div class="d-flex pe-3 my-4">
+              <button class="btn btn-card ms-auto py-1 px-4">Details</button>
+            </div>
+            <span class="span"
+              >Promoting clean energy, recycling, and sustainable practices
+            </span>
+          </div>
+          <div class="px-2 mt-3 me-xl-5 pb-4 item rounded-3">
+            <img
+              src="images/img11 (1).jpeg"
+              class="img-fluid rounded-top-3"
+              alt=""
+            />
+            <h5 class="mt-3 h5 mb-3">Tree Planting</h5>
+            <div class="d-flex pe-3 my-4">
+              <button class="btn btn-card ms-auto py-1 px-4">Details</button>
+            </div>
+            <span class="span"
+              >Planting trees to create greener spaces and fight climate change
+            </span>
+          </div>
+          <div class="px-2 mt-3 pb-4 item rounded-3">
+            <img
+              src="images/img13.jpeg"
+              class="img-fluid rounded-top-3"
+              alt=""
+            />
+            <h5 class="mt-3 h5 mb-3">Youth Training</h5>
+            <div class="d-flex pe-3 my-4">
+              <button class="btn btn-card ms-auto py-1 px-4">Details</button>
+            </div>
+            <span class="span"
+              >Equipping young people with skills and opportunities to build
+              their future
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- //////////////////////////////// -->
+    <div class="back2"></div>
+    <section class="big" style="background-color: rgb(230, 244, 241, 0.5)">
+      <div class="py-3" style="background-color: rgb(230, 244, 241, 0.5)">
+        <div
+          class="dropdown-divider opacity-50"
+          style="height: 0.6px; background-color: #58c5adff"
+        ></div>
+      </div>
+      <h2 class="py-4 h2 cards-header px-4 text-center bg-danger">
+        Our Leadership Team
+      </h2>
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-evenly pt-3">
+          <div class="col-9 col-md-5 col-xl-3 text-light rounded-4 itm">
+            <div class="rounded-4 pt-2 ps-3">
+              <span class="spn2 d-block">All Thanks And Appreciation</span>
+              <span class="d-block spn2"
+                ><i class="far fa-clock me-2"></i>April 22th 2025</span
+              >
+              <img src="images/img4.jpg" class="" alt="" />
+              <span class="d-block mt-2">Eng : Salah Mohamed</span>
+              <span class="d-block">Executive Director</span>
+            </div>
+          </div>
+          <div
+            class="col-9 col-md-5 col-xl-3 mt-5 mt-md-0 text-light rounded-4 itm"
+          >
+            <div class="rounded-4 pt-2 ps-3">
+              <span class="spn2 d-block">All Thanks And Appreciation</span>
+              <span class="d-block spn2">April 22th 2025</span>
+              <img src="images/person2.jpg" class="" alt="" />
+              <span class="d-block mt-2">Sara Mohamed</span>
+              <span class="d-block">Programs Coordinators</span>
+            </div>
+          </div>
+          <div
+            class="col-9 col-md-5 col-xl-3 mt-5 mt-xl-0 text-light rounded-4 itm"
+          >
+            <div class="rounded-4 pt-2 ps-3">
+              <span class="spn2 d-block">All Thanks And Appreciation</span>
+              <span class="d-block spn2">April 22th 2025</span>
+              <img
+                src="images/person3.jpg"
+                style="object-fit: cover"
+                class=""
+                alt=""
+              />
+              <span class="d-block mt-2">Ahmed Mohamed</span>
+              <span class="d-block">Volunteer Coordinator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-5" style="background-color: rgb(230, 244, 241, 0.5)">
+      <h2
+        class="text-center h2 achieve fw-bolder mb-5"
+        style="color: var(--head)"
+      >
+        Our Achievements
+      </h2>
+      <div class="container-fluid container-lg pt-5 pb-4">
+        <div
+          class="row cont row-clip mb-5 flex-column-reverse justify-content-between flex-md-row bg-light"
+        >
+          <div class="col-md-7 pt-3 ps-3 pe-2 text">
+            <h4 class="h4" style="color: var(--head)">Inspiring Stories</h4>
+            <span>May 22th 2025</span>
+            <div class="progress mt-2" style="height: 7px; width: 100px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 25%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <p class="mt-3 p" style="color: var(--p)">
+              Every day at our charity is an opportunity to write a new story of
+              hope. We invite you to listen to real-life stories of individuals
+              and families who were able to achieve their dreams and overcome
+              challenges thanks to your support. These stories are not just
+              tales; they are living testimonies to the power of giving and its
+              positive impact. Join us to share in building a better future and
+              authoring more success stories that light up the paths of those in
+              need.
+            </p>
+            <div
+              class="btn-group mt-3 mb-3"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-primary rounded-2 me-2">
+                <i class="fas fa-donate me-2"></i>Donate
+              </button>
+              <button type="button" class="btn btn-primary rounded-2 me-2">
+                <i class="fas fa-user me-2"></i>Join Us
+              </button>
+              <button type="button" class="btn btn-primary rounded-2">
+                <i class="far fa-comment me-2"></i>Share Storty
+              </button>
+            </div>
+          </div>
+          <div class="col-md-5 poly">
+            <img
+              src="images/img14.jpeg"
+              class="img-fluid img-clip"
+              style="width: 100%; object-fit: cover"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="row cont row-clip flex-column flex-md-row bg-light my-5">
+          <div class="col-md-5 poly1">
+            <img
+              src="images/img16.jpeg"
+              class="d-block img-clip"
+              style="width: 100%; object-fit: cover"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-md-7 pt-3 ps-3 pe-2 text">
+            <h4 class="h4" style="color: var(--head)">
+              Our Efforts Make a Difference
+            </h4>
+            <span>May 22th 2025</span>
+            <div class="progress mt-2" style="height: 7px; width: 100px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 25%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <p style="color: var(--p)" class="mt-3 p">
+              Our charity and our passion doesn't stop at certain limits; it
+              extends to include innovation and renewal in every service we
+              provide. We are always keen to provide everything new and useful
+              to those who deserve assistance. From our carefully designed
+              seasonal initiatives to our ongoing efforts that create a unique
+              and unforgettable experience. Follow our news to stay up-to-date
+              with the latest developments .
+            </p>
+            <div
+              class="btn-group mt-3 mb-3"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-primary rounded-2 me-2">
+                <i class="fas fa-donate me-2"></i>Donate
+              </button>
+              <button type="button" class="btn btn-primary rounded-2 me-2">
+                <i class="fas fa-user me-2"></i>Join Us
+              </button>
+              <button type="button" class="btn btn-primary rounded-2">
+                <i class="far fa-comment me-2"></i>Share Storty
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row cont row-clip my-5 flex-column-reverse flex-md-row bg-light"
+        >
+          <div class="col-md-7 pt-3 ps-3 pe-2 text">
+            <h4 class="h4" style="color: var(--head)">
+              Volunteer Opportunities
+            </h4>
+            <span>March 22th 2025</span>
+            <div class="progress mt-2" style="height: 7px; width: 100px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 25%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <p class="mt-3 p" style="color: var(--p)">
+              Volunteering is the soul and beating heart of charitable work. If
+              you are looking for an opportunity to make a real impact in your
+              community, our charity welcomes you. Whether you have specific
+              skills or wish to offer your time and effort, there is always a
+              place for you. Learn about available volunteer opportunities and
+              be part of our dedicated team that works hard to serve others.
+              Share our passion for giving and help put a smile on the faces of
+              those in need.
+            </p>
+            <div
+              class="btn-group mt-3 mb-3"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-primary rounded-2 me-2">
+                <i class="fas fa-donate me-2"></i>Donate
+              </button>
+              <button type="button" class="btn btn-primary rounded-2 me-2">
+                <i class="fas fa-user me-2"></i>Join Us
+              </button>
+              <button type="button" class="btn btn-primary rounded-2">
+                <i class="far fa-comment me-2"></i>Share Storty
+              </button>
+            </div>
+          </div>
+          <div class="col-md-5 poly">
+            <img
+              src="images/img15.jpeg"
+              class="d-block img-clip"
+              style="width: 100%; object-fit: cover"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="row cont row-clip flex-column flex-md-row bg-light my-5">
+          <div class="col-md-5 poly1 d-md-flex align-items-lg-stretch">
+            <img
+              src="images/img13.jpeg"
+              class="d-block img-clip"
+              style="width: 100%; object-fit: cover"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-md-7 pt-3 ps-3 pe-2 text">
+            <h4 class="h4" style="color: var(--head)">Upcoming Events</h4>
+            <span>May 22th 2025</span>
+            <div class="progress mt-2" style="height: 7px; width: 100px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 25%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <p style="color: var(--p)" class="mt-3 p">
+              We believe that charitable work can be fun and full of positive
+              energy. For this reason, we organize a variety of events that
+              combine awareness, fundraising, and creating a community
+              atmosphere. Whether it's a Ramadan fast-breaking campaign, a
+              charity marathon, or a handmade goods market, every event is a
+              step towards achieving our goals. Stay informed about our upcoming
+              event schedule and be part of our supportive community..
+            </p>
+            <div
+              class="btn-group mt-3 mb-3"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-primary rounded-2 me-2">
+                <i class="fas fa-donate me-2"></i>Donate
+              </button>
+              <button type="button" class="btn btn-primary rounded-2 me-2">
+                <i class="fas fa-user me-2"></i>Join Us
+              </button>
+              <button type="button" class="btn btn-primary rounded-2">
+                <i class="far fa-comment me-2"></i>Share Storty
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="pt-1 pb-5"
+      style="background-color: rgb(230, 244, 241, 0.5)"
+    >
+      <div class="container-fluid container-xl py-4 pb-4">
+        <div class="row pt-5 pb-5 justify-content-center row-icon">
+          <div class="col-7 col-sm-4 col-md-2 text-center pt-3 bg-light">
+            <h5 class="h5 fw-bold" style="color: var(--head)">subscribe</h5>
+
+            <img src="images/whatsapp.png" alt="" />
+            <a class="mt-4 mb-3 d-block fs-5" style="color: #53a995" href=""
+              >Go To Link</a
+            >
+          </div>
+          <div class="col-7 col-sm-4 col-md-2 text-center pt-3 bg-light">
+            <h5 class="h5 fw-bold" style="color: var(--head)">subscribe</h5>
+            <img src="images/facebook.png" alt="" />
+            <a class="mt-4 mb-3 d-block fs-5" style="color: #53a995" href=""
+              >Go To Link</a
+            >
+          </div>
+          <div class="col-7 col-sm-4 col-md-2 text-center pt-3 bg-light">
+            <h5 class="h5 fw-bold" style="color: var(--head)">subscribe</h5>
+            <img
+              src="images/instgram.png"
+              style="transform: scale(1.6)"
+              alt=""
+            />
+            <a class="mt-4 mb-3 d-block fs-5" style="color: #53a995" href=""
+              >Go To Link</a
+            >
+          </div>
+          <div class="col-7 col-sm-4 col-md-2 text-center pt-3 bg-light">
+            <h5 class="h5 fw-bold" style="color: var(--head)">subscribe</h5>
+            <img src="images/twitter.png" alt="" />
+            <a class="mt-4 mb-3 d-block fs-5" style="color: #53a995" href=""
+              >Go To Link</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ////////////////////////////////// -->
+
+    <footer class="pt-4 mt-3 pb-4">
+      <div
+        class="dropdown-divider bg-light opacity-50"
+        style="height: 1px"
+      ></div>
+
+      <div class="container-fluid container-xl">
+        <div class="row ps-md-5 justify-content-around">
+          <div class="col-md-3 pt-4 text-center">
+            <img class=" " src="images/logo.png" alt="" />
+            <h4
+              class="text-light mt-4 mt-md-0 ms-md-2 d-block d-md-inline-block"
+            >
+              GiveHope
+            </h4>
+            <div class="d-md-none mt-4 text-row text-center text-light">
+              <p>Te:000-000-000</p>
+              <p>Adress : Egypt</p>
+              <p>Fax:000 000 00</p>
+            </div>
+          </div>
+          <div
+            class="d-md-none dropdown-divider bg-light opacity-50"
+            style="height: 1px"
+          ></div>
+          <div class="col-md-4 pt-4 text-center">
+            <img class=" " src="images/logo.png" alt="" />
+            <h4
+              class="text-light ms-md-2 d-block mt-4 mt-md-0 d-md-inline-block"
+            >
+              Important Links
+            </h4>
+            <div
+              class="d-md-none mt-4 text-row text-row2 text-center text-light"
+            >
+              <p>Donate Now</p>
+              <p>Our Projects</p>
+              <p>How To Contribute</p>
+            </div>
+          </div>
+          <div
+            class="d-md-none dropdown-divider bg-light opacity-50"
+            style="height: 1px"
+          ></div>
+          <div class="col-md-3 py-4 text-center">
+            <img class=" " src="images/logo.png" alt="" />
+            <h4
+              class="text-light ms-md-2 mt-4 mt-md-0 d-block d-md-inline-block"
+            >
+              Vision
+            </h4>
+            <div class="d-md-none mt-4 text-row text-center text-light">
+              <p>Towards a better society</p>
+              <p>Providing aid to those in need</p>
+              <p>Together we make a difference</p>
+            </div>
+          </div>
+          <div
+            class="d-md-none dropdown-divider bg-light opacity-50"
+            style="height: 1px"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="dropdown-divider bg-light opacity-50"
+        style="height: 1px"
+      ></div>
+      <div class="container">
+        <div
+          class="row d-none d-md-flex text-row pt-4 text-light text-cente justify-content-evenly"
+        >
+          <div class="col-md-4 text-center">
+            <p>Te:000-000-000</p>
+            <p>Adress : Egypt</p>
+            <p>Fax:000 000 00</p>
+          </div>
+          <div class="col-md-4 text-center text-row2">
+            <p>Donate Now</p>
+            <p>Our Projects</p>
+            <p>How To Contribute</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p>Donate Now</p>
+            <p>Our Projects</p>
+            <p>How To Contribute</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="dropdown-divider bg-light opacity-50"
+        style="height: 1px"
+      ></div>
+
+      <p
+        style="color: #e0a910"
+        class="pt-4 p-last opacity-75 px-4 col text-center"
+      >
+        &COPY; GiveHope Charity , All Right Reserved Designed By ASMAA MOHAMED
+      </p>
+    </footer>
+    <div class="col-icon position-fixed d-flex flex-column">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-whatsapp-square"></i>
+      <i class="fab fa-instagram-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
